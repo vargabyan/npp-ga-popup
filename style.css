@@ -1,0 +1,243 @@
+body {
+    font-family: Gilroy;
+    color: white;
+}
+
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+
+.modal-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-basket-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 317px;
+    padding: 40px 19px 47px 20px;
+    justify-content: center;
+    align-items: center;
+    background: #0B5AFF;
+}
+
+.add-basket-modal_header {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.add-basket-modal_button-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.add-basket-modal_btn {
+    display: flex;
+    height: 37px;
+    padding: 8px 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+button.add-basket-modal_btn:nth-child(1) {
+    background: #3476FF;
+
+}
+
+button.add-basket-modal_btn:nth-child(2) {
+    background: #061127;
+
+}
+
+
+
+.submit-your-application-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 19px 33px 20px;
+    justify-content: flex-end;
+    background: #0B5AFF;
+    max-width: 317px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.submit-your-application-modal_header {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.submit-your-application-modal_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.submit-your-application-modal_form_input_label {
+    position: relative;
+}
+
+.submit-your-application-modal_form_input {
+    display: flex;
+    width: -webkit-fill-available;
+    padding: 8px 15px;
+    align-items: flex-end;
+    background: #FFF;
+    border: none;
+    height: 21px;
+}
+
+.submit-your-application-modal_form_input_label span {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-family: Segoe UI;
+    font-size: 14px;
+    cursor: text;
+}
+
+.submit-your-application-modal_form_input:invalid + span:before {
+    content: attr(placeholder);
+    position: relative;
+    color: #999;
+}
+
+.submit-your-application-modal_form_input:invalid + span:after {
+    content: '*';
+    position: relative;
+    color: red;
+    margin-left: 8px;
+}
+
+.submit-your-application-modal_form_textarea {
+    display: flex;
+    width: -webkit-fill-available;
+    padding: 8px 15px;
+    align-items: flex-end;
+    background: #FFF;
+    border: none;
+    height: 55px;
+}
+
+.submit-your-application-modal_form_textarea-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.submit-your-application-modal_form_textarea-label:before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_129_5408)'%3E%3Cpath d='M16.4339 10.936V12.6434H12.8545V16.2229H11.1471V12.6434H7.58823V10.936H11.1471V7.37714H12.8545V10.936H16.4339Z' fill='white'/%3E%3C/g%3E%3Crect x='0.5' y='0.5' width='23' height='23' stroke='white'/%3E%3Cdefs%3E%3CclipPath id='clip0_129_5408'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    width: 24px;
+    height: 20px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFF;
+}
+
+
+.submit-your-application-modal_form_textarea-label input {
+    display: none;
+}
+
+
+.submit-your-application-modal_form_radio-label {
+    margin-top: 6px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.submit-your-application-modal_form_radio {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.submit-your-application-modal_form_radio-label span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #0B5AFF;
+    border-radius: 50%;
+    border: solid 3px white;
+}
+
+.submit-your-application-modal_form_radio-label span:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 6px;
+    left: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: white;
+}
+
+.submit-your-application-modal_form_radio:checked ~ span:after {
+    display: block;
+}
+
+.submit-your-application-modal_form_radio {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    border: solid 3px white;
+}
+
+.submit-your-application-modal_form_button-submit {
+    display: flex;
+    width: -webkit-fill-available;
+    height: 37px;
+    padding: 8px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #061127;
+    color: #FFF;
+    border: none;
+    margin-top: 8px;
+}
+
+.submit-your-application-modal_politic {
+    margin-top: 10px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.submit-your-application-modal_politic a {
+    text-decoration-line: underline;
+    color: #FFF;
+}
