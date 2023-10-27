@@ -53,6 +53,7 @@ a {
     color: white;
     border: none;
     width: 100%;
+    cursor: pointer;
 }
 
 button.add-basket-modal_btn:nth-child(1) {
@@ -228,6 +229,7 @@ button.add-basket-modal_btn:nth-child(2) {
     color: #FFF;
     border: none;
     margin-top: 8px;
+    cursor: pointer;
 }
 
 .submit-your-application-modal_politic {
